@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/search"
+        android:icon="@drawable/search"
+        android:title="" />
+
+    <item
+        android:id="@+id/menupaw"
+        android:icon="@drawable/paw"
+        android:title="" />
+
+    <item
+        android:id="@+id/data"
+        android:icon="@drawable/datatime"
+        android:title="" />
+
+    <item
+        android:id="@+id/heart"
+        android:icon="@drawable/heart"
+        android:title="" />
+
+
+</menu>
