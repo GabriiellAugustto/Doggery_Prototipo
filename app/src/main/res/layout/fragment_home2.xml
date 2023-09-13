@@ -128,10 +128,25 @@
             android:textColor="#CD945D"
             android:textStyle="bold"/>
 
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:gravity="center"
+        android:layout_marginTop="400dp"
+        android:layout_marginStart="55dp">
 
 
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical" />
+        </HorizontalScrollView>
     </LinearLayout>
 
 
