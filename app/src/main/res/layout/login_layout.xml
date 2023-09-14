@@ -13,7 +13,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="##4BA6B0E8"
+        android:background="#4BA6B0E8"
         android:gravity="center"
         android:orientation="vertical">
 
@@ -39,7 +39,8 @@
                     android:text="Sign In"
                     android:textColor="#685453"
                     android:textSize="40sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:fontFamily="@font/montserrat"/>
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="280dp"
@@ -60,6 +61,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
                         android:hint="Usuário"
+                        android:fontFamily="@font/montserrat"
                         android:drawableRight="@drawable/user"
                         android:maxLength="100"
                         android:padding="20dp" />
@@ -85,6 +87,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
                         android:hint="Senha"
+                        android:fontFamily="@font/montserrat"
                         android:inputType="textPassword"
                         android:maxLength="100"
                         android:padding="20dp" />
@@ -92,13 +95,14 @@
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <Button
-                    android:id="@+id/btsingin"
+                    android:id="@+id/btsingin1"
                     style="@style/Widget.Material3.Button"
                     android:layout_width="155dp"
                     android:layout_height="48dp"
                     android:layout_marginTop="30dp"
                     android:backgroundTint="#A555EC"
                     android:text="Sign In"
+                    android:fontFamily="@font/montserrat"
                     android:textSize="20sp" />
 
                 <TextView
@@ -106,6 +110,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="30dp"
                     android:text="Forgot your password?"
+                    android:fontFamily="@font/montserrat"
                     android:textColor="#685453"
                     android:textSize="15sp" />
 
@@ -122,24 +127,26 @@
 
             <Button
                 style="@style/Widget.Material3.Button"
-                android:layout_width="150dp"
+                android:layout_width="180dp"
                 android:layout_height="50dp"
                 android:backgroundTint="#FFFDFD"
                 android:drawableLeft="@drawable/google"
                 android:rotationY="4"
                 android:text="Google"
+                android:fontFamily="@font/montserrat"
                 android:textColor="#685453"
                 android:textSize="15sp" />
 
             <Button
                 style="@style/Widget.Material3.Button"
-                android:layout_width="160dp"
+                android:layout_width="180dp"
                 android:layout_height="50dp"
                 android:layout_marginStart="40dp"
                 android:backgroundTint="#FFFFFF"
                 android:cursorVisible="false"
                 android:drawableLeft="@drawable/face"
                 android:rotationY="-4"
+                android:fontFamily="@font/montserrat"
                 android:text="Facebook"
                 android:textColor="#685453"
                 android:textSize="15sp" />
@@ -147,12 +154,13 @@
         </LinearLayout>
 
         <Button
-            android:id="@+id/btnsingup"
+            android:id="@+id/btncreate"
             style="@style/Widget.Material3.Button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
             android:backgroundTint="#fff"
+            android:fontFamily="@font/montserrat"
             android:text="Don’t have an account? Sign Up!"
             android:textColor="#685453"
             android:textSize="15sp" />
