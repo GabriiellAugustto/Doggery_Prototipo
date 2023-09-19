@@ -60,6 +60,7 @@
                         android:layout_height="50dp"
                         android:drawableRight="@drawable/user"
                         android:hint="E-mail:"
+                        android:textSize="20sp"
                         android:fontFamily="@font/montserrat"
                         android:maxLength="100"
                         android:padding="20dp" />
@@ -85,6 +86,7 @@
                         android:layout_height="50dp"
                         android:drawableRight="@drawable/key"
                         android:hint="Senha:"
+                        android:textSize="20sp"
                         android:fontFamily="@font/montserrat"
                         android:inputType="textPassword"
                         android:maxLength="100"
@@ -112,6 +114,7 @@
                         android:layout_height="50dp"
                         android:drawableRight="@drawable/phone"
                         android:hint="Telefone:"
+                        android:textSize="20sp"
                         android:fontFamily="@font/montserrat"
                         android:maxLength="100"
                         android:padding="20dp" />
@@ -130,14 +133,14 @@
                     android:textColor="#fff"
                     android:textSize="20sp" />
 
-                <TextView
-                    android:layout_width="220dp"
+                <CheckBox
+                    android:layout_width="290dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="30dp"
                     android:text="By clicking this button, you agree with our - Terms and Conditions"
                     android:textColor="#685453"
                     android:fontFamily="@font/montserrat"
-                    android:textSize="13sp" />
+                    android:textSize="15sp" />
 
             </LinearLayout>
         </androidx.cardview.widget.CardView>
@@ -161,7 +164,7 @@
                 android:fontFamily="@font/montserrat"
 
                 android:textColor="#685453"
-                android:textSize="15sp" />
+                android:textSize="18sp" />
 
             <Button
                 style="@style/Widget.Material3.Button"
@@ -175,21 +178,21 @@
                 android:text="Facebook"
                 android:fontFamily="@font/montserrat"
                 android:textColor="#685453"
-                android:textSize="15sp" />
+                android:textSize="18sp" />
 
         </LinearLayout>
 
         <Button
             android:id="@+id/btnsingin2"
             style="@style/Widget.Material3.Button"
-            android:layout_width="320dp"
+            android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginTop="30dp"
             android:backgroundTint="#fff"
             android:fontFamily="@font/montserrat"
             android:text="Already have an account? Sign In!"
             android:textColor="#685453"
-            android:textSize="15sp" />
+            android:textSize="18sp" />
 
     </LinearLayout>
 

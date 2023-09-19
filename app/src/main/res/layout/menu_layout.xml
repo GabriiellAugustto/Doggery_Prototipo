@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fundo"
     tools:context=".MenuActivity">
 
 
@@ -21,8 +20,11 @@
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_alignBottom="@id/flFragment"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="2dp"
         android:background="#A555EC"
-        android:layout_margin="2dp"
         app:menu="@menu/bottonnav_menu" />
 
 

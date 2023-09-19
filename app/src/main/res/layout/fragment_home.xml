@@ -1,11 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".HomeFragment"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="#A1E1CEF3">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
 
 
     <LinearLayout
@@ -16,6 +24,7 @@
         android:layout_margin="10dp">
 
     <ImageButton
+        android:id="@+id/btnchat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/chat"
@@ -55,6 +64,7 @@
             android:layout_gravity="center"
             android:fontFamily="@font/montserrat"
             android:text="Hello, Doguinho!"
+            android:textSize="18sp"
             android:layout_margin="10dp"/>
 
 
@@ -67,6 +77,13 @@
             android:contentDescription="+"/>
 
     </LinearLayout>
+
+    <View
+        android:layout_width="270dp"
+        android:layout_height="3dp"
+        android:background="#fff"
+        android:layout_marginTop="135dp"
+        android:layout_marginLeft="25dp"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -95,6 +112,7 @@
                 android:layout_height="50dp"
                 android:drawableLeft="@drawable/search_maps"
                 android:hint="Use my Location"
+                android:textSize="18sp"
                 android:fontFamily="@font/montserrat"
                 android:maxLength="100"
                 android:padding="20dp"
@@ -114,23 +132,32 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:gravity="center"
-        android:layout_marginTop="330dp">
+        android:layout_marginTop="300dp">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Hey,"
+            android:textSize="18sp"
             android:fontFamily="@font/montserrat"
-            android:layout_marginLeft="30dp"/>
+            android:layout_marginLeft="2dp"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="what you looking for?"
+            android:textSize="18sp"
             android:fontFamily="@font/montserrat"
             android:layout_marginLeft="80dp"/>
 
     </LinearLayout>
+
+    <View
+        android:layout_width="210dp"
+        android:layout_height="3dp"
+        android:background="#fff"
+        android:layout_marginTop="380dp"
+        android:layout_marginLeft="180dp"/>
 
 
     <LinearLayout
@@ -142,7 +169,7 @@
         <androidx.cardview.widget.CardView
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:backgroundTint="#5EDDC9EF"
+            android:backgroundTint="#fff"
             android:orientation="vertical"
             app:cardCornerRadius="50dp"
             android:layout_marginLeft="30dp">
@@ -162,7 +189,8 @@
                 android:background="#00FFFFFF"
                 android:contentDescription="petssiter"
                 android:scaleType="centerInside"
-                android:src="@drawable/petsitter" />
+                android:src="@drawable/petsitter"
+                android:onClick="Petsitter"/>
 
         </LinearLayout>
 
@@ -171,7 +199,7 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_marginTop="30dp"
-            android:backgroundTint="#5EDDC9EF"
+            android:backgroundTint="#fff"
             android:orientation="vertical"
             app:cardCornerRadius="50dp"
             android:layout_marginLeft="30dp">
@@ -215,7 +243,7 @@
             android:text="PetSitters"
             android:fontFamily="@font/montserrat"
             android:layout_marginTop="30dp"
-            android:textSize="25sp"
+            android:textSize="30sp"
             android:textColor="#CD945D"
             android:textStyle="bold"/>
 
@@ -225,7 +253,7 @@
             android:text="DogWalkers"
             android:fontFamily="@font/montserrat"
             android:layout_marginTop="100dp"
-            android:textSize="25sp"
+            android:textSize="30sp"
             android:textColor="#CD945D"
             android:textStyle="bold"/>
 
@@ -235,7 +263,56 @@
 
     </LinearLayout>
 
+        <HorizontalScrollView
+            style="@android:style/Widget.DeviceDefault.HorizontalScrollView"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="700dp"
+            android:layout_marginBottom="100dp"
+            android:gravity="center"
+            android:contentDescription="scroll">
 
 
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
 
-</FrameLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="250dp"
+                    android:layout_height="150dp"
+                    android:backgroundTint="#fff"
+                    android:orientation="vertical"
+                    app:cardCornerRadius="50dp"
+                    android:layout_marginLeft="500dp">
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="250dp"
+                    android:layout_height="150dp"
+                    android:backgroundTint="#fff"
+                    android:orientation="vertical"
+                    app:cardCornerRadius="50dp"
+                    android:layout_marginLeft="10dp">
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="250dp"
+                    android:layout_height="150dp"
+                    android:backgroundTint="#fff"
+                    android:orientation="vertical"
+                    app:cardCornerRadius="50dp"
+                    android:layout_marginLeft="10dp">
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+    </FrameLayout>
+
+</ScrollView>

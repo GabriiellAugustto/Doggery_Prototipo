@@ -1,37 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".DogWalkersFragment">
+    tools:context=".DogwalkerActivity"
+    android:background="#A1E1CEF3"
+    android:orientation="vertical">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="right"
-        android:layout_margin="10dp">
-
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/chat"
-            android:backgroundTint="#00FFFFFF"
-            android:contentDescription="chat"/>
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/bell"
-            android:backgroundTint="#00FFFFFF"
-            android:contentDescription="notificacao"/>
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/menuburguer"
-            android:backgroundTint="#00FFFFFF"
-            android:contentDescription="menu"/>
-    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -54,24 +30,24 @@
         android:layout_height="wrap_content"
         android:text="Hey, doguinho!"
         android:fontFamily="@font/montserrat"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="10dp"
         android:layout_marginLeft="35dp"
-        android:textSize="16sp"
+        android:textSize="20sp"
         android:textColor="#685453"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Let’s walk?"
         android:fontFamily="@font/montserrat"
-        android:layout_marginTop="115dp"
+        android:layout_marginTop="2dp"
         android:layout_marginLeft="35dp"
-        android:textSize="16dp"
+        android:textSize="20dp"
         android:textColor="#685453"/>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="160dp"
+        android:layout_marginTop="10dp"
         android:orientation="horizontal"
         android:gravity="center">
 
@@ -95,6 +71,7 @@
                 android:layout_height="50dp"
                 android:drawableLeft="@drawable/search_maps"
                 android:hint="Location"
+                android:textSize="20sp"
                 android:fontFamily="@font/montserrat"
                 android:maxLength="100"
                 android:padding="20dp"
@@ -109,4 +86,4 @@
 
     </LinearLayout>
 
-</FrameLayout>
+</LinearLayout>

@@ -2,8 +2,8 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/search"
-        android:icon="@drawable/search"
+        android:id="@+id/home"
+        android:icon="@drawable/menuburguer"
         android:title="" />
 
     <item
@@ -17,8 +17,8 @@
         android:title="" />
 
     <item
-        android:id="@+id/heart"
-        android:icon="@drawable/heart"
+        android:id="@+id/perfil"
+        android:icon="@drawable/person"
         android:title="" />
 
 

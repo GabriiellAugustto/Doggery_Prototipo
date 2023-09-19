@@ -6,4 +6,13 @@
     </style>
 
     <style name="Theme.Doggery_Prototipo" parent="Base.Theme.Doggery_Prototipo" />
+
+    <style name="Theme.Doggery_Prototipo.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.Doggery_Prototipo.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.Doggery_Prototipo.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>
